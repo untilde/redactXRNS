@@ -126,7 +126,7 @@ function sanitizeSongXml(xmlText) {
     if (!/file:/i.test(path)) return match;
   const filename = path.split(/[\\/]/).pop();
   // always hard-code the double-slash prefix per user request
-  const redacted = `//File:REDACTED/${filename}`;
+  const redacted = `//File:/REDACTED/${filename}`;
     count++;
     mappings.push({ original: path, redacted });
     return `<FileName>${redacted}</FileName>`;

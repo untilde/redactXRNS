@@ -40,18 +40,17 @@
     <AnonOutput />
   </div>
 
-  <!-- fixed footer: special thanks -->
-  <div
-    class="fixed bottom-4 left-0 right-0 flex justify-center pointer-events-none"
-  >
-    <p class="text-xs px-3 py-1 pointer-events-auto">
-      Source available <a href="https://github.com/untilde/redactXRNS" class="text-renoise-dark">here</a>.
-    </p>
-    <br>
-    <p class="text-xs px-3 py-1 pointer-events-auto">
-      Special thanks to <a href="https://lostfrog.bandcamp.com/album/p-slump-og-noko-att-t" class="text-renoise-dark">det/hine</a> for the convo that lead me to this paranoia tool.
-    </p>
-  </div>
+  <!-- footer: special thanks (flows with content so it doesn't overlap files) -->
+  <footer class="mt-8 w-full flex justify-center pointer-events-none">
+    <div class="max-w-2xl text-center">
+      <p class="text-xs px-3 py-1 pointer-events-auto">
+        Source available <a href="https://github.com/untilde/redactXRNS" class="text-renoise-dark">here</a>.
+      </p>
+      <p class="text-xs px-3 py-1 pointer-events-auto">
+        Special thanks to <a href="https://lostfrog.bandcamp.com/album/p-slump-og-noko-att-t" class="text-renoise-dark">det/hine</a> for the convo that lead me to this paranoia tool.
+      </p>
+    </div>
+  </footer>
 </template>
 
 <script setup>
