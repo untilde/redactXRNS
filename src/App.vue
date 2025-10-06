@@ -45,6 +45,9 @@
     class="fixed bottom-4 left-0 right-0 flex justify-center pointer-events-none"
   >
     <p class="text-xs px-3 py-1 pointer-events-auto">
+      Source available <a href="https://github.com/untilde/redactXRNS">here</a>
+    </p>
+    <p class="text-xs px-3 py-1 pointer-events-auto">
       Special thanks to det/hine for the convo that lead me to this tool.
     </p>
   </div>
