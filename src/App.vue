@@ -29,7 +29,7 @@
           @click="anonymizeAll"
           :disabled="processing"
         >
-          Anonymize
+          Redact
         </button>
       </div>
       </div>
@@ -45,10 +45,11 @@
     class="fixed bottom-4 left-0 right-0 flex justify-center pointer-events-none"
   >
     <p class="text-xs px-3 py-1 pointer-events-auto">
-      Source available <a href="https://github.com/untilde/redactXRNS">here</a>
+      Source available <a href="https://github.com/untilde/redactXRNS" class="text-renoise-dark">here</a>.
     </p>
+    <br>
     <p class="text-xs px-3 py-1 pointer-events-auto">
-      Special thanks to det/hine for the convo that lead me to this tool.
+      Special thanks to <a href="https://lostfrog.bandcamp.com/album/p-slump-og-noko-att-t" class="text-renoise-dark">det/hine</a> for the convo that lead me to this paranoia tool.
     </p>
   </div>
 </template>
