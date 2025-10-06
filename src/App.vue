@@ -29,7 +29,7 @@
           @click="anonymizeAll"
           :disabled="processing"
         >
-          Anonymize
+          Redact
         </button>
       </div>
       </div>
