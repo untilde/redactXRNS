@@ -1,0 +1,176 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* Anonymous Pro.ttf */
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/Anonymous Pro/Anonymous_Pro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/Anonymous Pro/Anonymous_Pro_B.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/Anonymous Pro/Anonymous_Pro_I.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/Anonymous Pro/Anonymous_Pro_BI.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+
+  --renoise: #a54923;
+  --renoise-dark: #7b3818;
+  --renoise-darker-1: #5a2a10;
+  --renoise-darker-2: #3f1c0b;
+  --renoise-soft: #e7b39f;
+  --renoise-muted: rgba(165, 73, 35, 0.12);
+
+  --color-heading: var(--renoise);
+  --color-text: var(--vt-c-text-dark-2);
+
+  --section-gap: 160px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/Anonymous-Pro/Anonymous_Pro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/Anonymous-Pro/Anonymous_Pro_B.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/Anonymous-Pro/Anonymous_Pro_I.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/Anonymous-Pro/Anonymous_Pro_BI.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+button {
+  background-color: var(--renoise-dark);
+  color: white;
+}
+
+/* Color Utility Classes (background / text / border) */
+.bg-renoise {
+  background: var(--renoise);
+}
+.text-renoise {
+  color: var(--renoise);
+}
+.border-renoise {
+  border-color: var(--renoise);
+}
+
+.bg-renoise-dark {
+  background: var(--renoise-dark);
+}
+.text-renoise-dark {
+  color: var(--renoise-dark);
+}
+.border-renoise-dark {
+  border-color: var(--renoise-dark);
+}
+
+.bg-renoise-soft {
+  background: var(--renoise-soft);
+}
+.text-renoise-soft {
+  color: var(--renoise-soft);
+}
+.border-renoise-soft {
+  border-color: var(--renoise-soft);
+}
+
+/* Semi-Transparent */
+.bg-renoise-muted {
+  background: var(--renoise-muted);
+}
+.text-renoise-muted {
+  color: var(--renoise-muted);
+}
+.border-renoise-muted {
+  border-color: var(--renoise-muted);
+}
+
+/* Darker */
+.bg-renoise-darker-1 {
+  background: var(--renoise-darker-1);
+}
+.text-renoise-darker-1 {
+  color: var(--renoise-darker-1);
+}
+.border-renoise-darker-1 {
+  border-color: var(--renoise-darker-1);
+}
+
+.bg-renoise-darker-2 {
+  background: var(--renoise-darker-2);
+}
+.text-renoise-darker-2 {
+  color: var(--renoise-darker-2);
+}
+.border-renoise-darker-2 {
+  border-color: var(--renoise-darker-2);
+}
