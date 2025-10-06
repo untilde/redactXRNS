@@ -59,7 +59,7 @@ async function anonymizeFile(file) {
   }
 
   const blob = await zip.generateAsync({ type: "blob" });
-  const outName = file.name.replace(/(\.zip|\.xrns)$/i, "") + "-anon.xrns";
+  const outName = file.name.replace(/(\.zip|\.xrns)$/i, "") + "-redacted.xrns";
   const url = URL.createObjectURL(blob);
 
   const listTxt =
